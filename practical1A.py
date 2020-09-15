@@ -1,29 +1,20 @@
-print("Matrix operation")
-print("1.Addition")
-print("2.Mutiplication")
-print("3.Transpose")
-x = [[12,3,21],[2,43,5],[5,32,53]]
-y = [[11,4,6],[21,7,9],[4,8,43]]
-result = [[0,0,0],[0,0,0],[0,0,0]]
-ch = int(input("Enter your choice:"))
-if ch == 1:
-    for i in range(len(x)):
-        for j in range(len(y[0])):
-            result[i][j] = x[i][j] + y[i][j]
-    for r in result:
-        print(r)
-elif ch == 2:
-    for i in range(len(x)):
-        for j in range(len(y[0])):
-            for k in range (len(y)):
-                result[i][j] = x[i][j] * y[i][j]
-    for r in result:
-        print(r)
-elif ch == 3:
-    for i in range(len(x)):
-        for j in range(len(y[0])):
-            result[j][i] = x[i][j]
-    for r in result:
-        print(r)
-else:
-    print("Invalid choice")
+def linear_search(value,search_for):
+       search_at=0
+       search_res=false
+       while search_at<len(values) and
+         search_res is false:
+                    if values[search_at]== search_for:
+                    search_res=true
+                    print('element inthe position',search_at)
+                 else:
+                        search_at=search_at+1
+          return search_res
+list=['niki','utsav','tanvi','vedangi','nidhi']
+print(linear_search(list,'aman'))
+print(linear_search(list,'niki'))
+list.reverse()
+print("reverse of the number is=",list)
+list.sort()
+print("sorted list of the number is=",list)
+list.sort(reverse=true)
+print("the list in descending order is=",list)
